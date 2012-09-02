@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Main()
+comment1.params=e
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=
+comment2.target=void\ AddM()
+comment3.params=
+comment3.target=void\ DeleteM()
+comment3.text=\r\n\ \ \ \ //\=\=DELETE\ A\ Member\=\=\r\n\ \ \ \ \r\n\ \ \ \ public\ void\ DeleteM()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ boolean\ IDMF\ \=\ false;\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ for\ (int\ x\ \=\ 0;\ x\ <\ (IDM.length());\ x++)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if\ (Character.isDigit(IDM.charAt(x)))\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ //if\ field\ consists\ of\ integers\ (type\ check)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ IDMF\ \=\ true;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ output("Use\ Letters\ Only\ for\ the\ CPR");\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ int\ index\ \=\ -1;\r\n\ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ //Validation\r\n\ \ \r\n\ \ \ if(IDM.equals(""))\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ //If\ field\ is\ empty\r\n\ \ \ {\r\n\ \ \ \ \ \ \ output("CPR\ Field\ is\ Empty,\ Please\ Enter\ a\ CPR\ to\ Complete\ Process");\r\n\ \ \ }\r\n\r\n\ \r\n\ \ \ \ \r\n\ \ \ \ else\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ for\ (\ int\ x\ \=\ 0;\ x\ <\ MemberSize\ ;\ x++)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ if\ (IDM.equals(MemberArray[x].getIDM()))\r\n\ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ index\ \=\ x;\ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ IDMF\ \=\ true;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ for\ (int\ y\ \=\ index;\ y\ <\ MemberSize-1;\ y++)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MemberArray[y].setIDM(MemberArray[y+1].getIDM());\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ //Shifts\ up\ the\ records\ by\ a\ factor\ of\ 1\ position\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MemberArray[y].setNameM(MemberArray[y+1].getNameM());\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MemberArray[y].setMobileM(MemberArray[y+1].getMobileM());\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MemberArray[y].setEmailM(MemberArray[y+1].getEmailM());\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MemberArray[y].setAddressM(MemberArray[y+1].getAddressM());\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MemberArray[y].setNationalityM(MemberArray[y+1].getNationalityM());\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MemberArray[y].setGListM(MemberArray[y+1].getGListM());\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ output("You\ Have\ Successfully\ Deleted\ the\ Member\ from\ the\ System");\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MemberSize\ \=\ MemberSize\ -1;\ \ \ \ \ //Decreases\ the\ number\ of\ members\ in\ the\ club\ by\ 1\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ if\ (IDMF\ \=\=\ false)\r\n\ \ \ \ \ \ \ \ {\ \ \r\n\ \ \ \ \ \ \ \ \ output("The\ CPR\ You\ Entered\ Cannot\ be\ Found");\ \r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n}\r\n
+comment4.params=
+comment4.target=void\ DisplayM()
+comment5.params=
+comment5.target=void\ ClearM()
+comment6.params=
+comment6.target=void\ SearchM()
+comment7.params=
+comment7.target=void\ SaveM()
+comment8.params=
+comment8.target=void\ DisplayD()
+comment9.params=
+comment9.target=void\ LoadFiles()
+numComments=10

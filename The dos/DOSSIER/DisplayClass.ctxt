@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=GameD1
+comment0.target=DisplayClass(java.lang.String)
+comment1.params=
+comment1.target=DisplayClass()
+comment2.params=GameD2
+comment2.target=void\ setGameD(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getGameD()
+numComments=4
